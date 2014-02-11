@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.25)  11 FEB 2014 13:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.25)  11 FEB 2014 16:06
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/rafaeldurelli/Dropbox/Artigos Elaborados/ARTIGO_SBES_2014_FERRAMENTA/TSWLatexianTemp_000013.tex"
-(/Users/rafaeldurelli/Dropbox/Artigos Elaborados/ARTIGO_SBES_2014_FERRAMENTA/TSWLatexianTemp_000013.tex
+**"/Users/rafaeldurelli/Dropbox/Artigos Elaborados/ARTIGO_SBES_2014_FERRAMENTA/TSWLatexianTemp_000025.tex"
+(/Users/rafaeldurelli/Dropbox/Artigos Elaborados/ARTIGO_SBES_2014_FERRAMENTA/TSWLatexianTemp_000025.tex
 LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
@@ -163,129 +163,34 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@mess@toks=\toks19
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
- (/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
-
-
-/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty:213: LaTeX Error: Command \caption@eh already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.213   section about errors.\MessageBreak\@ehc}
-                                                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-\captionmargin=\dimen130
-\captionmargin@=\dimen131
-\captionwidth=\dimen132
-\caption@tempdima=\dimen133
-
-/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty:441: LaTeX Error: Command \setcaptionmargin already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.441   \caption@setmargin}
-                           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty:453: LaTeX Error: Command \setcaptionwidth already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.453   \caption@setwidth}
-                          
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-\caption@indent=\dimen134
-\caption@parindent=\dimen135
-\caption@hangindent=\dimen136
-Package caption Info: Unknown document class (or package),
-(caption)             standard defaults will be used.
-)
-
-Package caption Warning: Unsupported document class (or package) detected,
-(caption)                usage of the caption package is not recommended.
-See the caption package documentation for explanation.
-
-Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionskip \captionlinewidth \hsize \def \captionlabel {#1}\def \captiontext {#2}\usecaptionstyle {\caption@style }\vskip \belowcaptionskip .
-
-/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption.sty:57: Package caption Error: You can't use both, the (obsolete) caption2 *and*
-(caption)                the (current) caption package.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.57 }{}
-        
-If you do not understand this error, please take a closer look
-at the documentation of the `caption2' package.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-\c@subfigure=\count101
-\c@subtable=\count102
-
-/usr/local/texlive/2013/texmf-dist/tex/latex/caption/subcaption.sty:66: Undefined control sequence.
-<argument> \caption@subtypehook 
-                                
-l.66   \let\subcaption\caption}
-                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip58
 \bibsep=\skip59
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count103
+\c@NAT@ctr=\count101
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks20
 \inpenc@posthook=\toks21
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/latin9.def
 File: latin9.def 2008/03/30 v1.1d Input encoding file
-)) (./tex/defines.tex) (./TSWLatexianTemp_000013.aux)
-\openout1 = `TSWLatexianTemp_000013.aux'.
+)) (./tex/defines.tex) (./TSWLatexianTemp_000025.aux)
+\openout1 = `TSWLatexianTemp_000025.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 43.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -325,16 +230,16 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
-\scratchdimen=\dimen137
+\scratchcounter=\count102
+\scratchdimen=\dimen130
 \scratchbox=\box30
-\nofMPsegments=\count105
-\nofMParguments=\count106
+\nofMPsegments=\count103
+\nofMParguments=\count104
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count107
-\MPscratchDim=\dimen138
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
+\MPscratchCnt=\count105
+\MPscratchDim=\dimen131
+\MPnumerator=\count106
+\makeMPintoPDFobject=\count107
 \everyMPtoPDFconversion=\toks23
 ) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
@@ -369,59 +274,30 @@ Package grfext Info: Graphics extension search list:
  (/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@lstlisting=\count110
-Package caption Info: Begin \AtBeginDocument code.
-
-/Users/rafaeldurelli/Dropbox/Artigos Elaborados/ARTIGO_SBES_2014_FERRAMENTA/TSWLatexianTemp_000013.tex:45: Undefined control sequence.
-\caption@begindocumenthook ...ion@ifcompatibility 
-                                                  {\caption@Error {The `subcaption' package does not work correctly\MessageBreak in compatibility mode}}{}\def \@elt ##1{\newenvironment {sub##1}{\caption@withoptargs \subcaption@minipage }{\endminipage }...
-l.45 \begin{document}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-/Users/rafaeldurelli/Dropbox/Artigos Elaborados/ARTIGO_SBES_2014_FERRAMENTA/TSWLatexianTemp_000013.tex:45: Package caption Error: The `subcaption' package does not work correctly
-(caption)                in compatibility mode.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45 \begin{document}
-                     
-If you do not understand this error, please take a closer look
-at the documentation of the `caption2' package.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count108
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <16> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 45.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 47.
+(Font)              <12> on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 47.
+(Font)              <8> on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 47.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 47.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1pcr.fd
+(Font)              <6> on input line 45.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 45.
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 47.
+(Font)              <7> on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 47.
+(Font)              <5> on input line 45.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 49.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 47.
  (./tex/abstract.tex)
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <13> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 52.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 50.
  (./tex/introduction.tex
 
 Package natbib Warning: Citation `Ulrich:2010:IST:1841736' on page 1 undefined on input line 1.
@@ -442,7 +318,13 @@ File: figure/processoDaFerramenta.pdf Graphic file (type pdf)
  <use figure/processoDaFerramenta.pdf>
 Package pdftex.def Info: figure/processoDaFerramenta.pdf used on input line 16.
 (pdftex.def)             Requested size: 312.98259pt x 108.12169pt.
- [2 <./figure/processoDaFerramenta.pdf>] <figure/discovery_kdm_model.png, id=73, 501.875pt x 98.3675pt>
+LaTeX Font Info:    Try loading font information for T1+phv on input line 17.
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 17.
+ <figure/discovery_kdm_model.png, id=15, 501.875pt x 98.3675pt>
 ./tex/infrastrucute.tex:29: Missing number, treated as zero.
 <to be read again> 
                    \relax 
@@ -489,7 +371,7 @@ File: figure/discovery_kdm_model.png Graphic file (type png)
 <use figure/discovery_kdm_model.png>
 Package pdftex.def Info: figure/discovery_kdm_model.png used on input line 29.
 (pdftex.def)             Requested size: 170.71652pt x 33.461pt.
- <figure/discovery_java_model.png, id=74, 501.875pt x 99.37125pt>
+ <figure/discovery_java_model.png, id=16, 501.875pt x 99.37125pt>
 ./tex/infrastrucute.tex:35: Missing number, treated as zero.
 <to be read again> 
                    \relax 
@@ -536,17 +418,17 @@ File: figure/discovery_java_model.png Graphic file (type png)
 <use figure/discovery_java_model.png>
 Package pdftex.def Info: figure/discovery_java_model.png used on input line 35.
 (pdftex.def)             Requested size: 170.71652pt x 33.80244pt.
- <figure/ScreenShot_tool.pdf, id=75, 481.54906pt x 181.0514pt>
+ [2 <./figure/processoDaFerramenta.pdf>] <figure/ScreenShot_tool.pdf, id=76, 481.54906pt x 181.0514pt>
 File: figure/ScreenShot_tool.pdf Graphic file (type pdf)
  <use figure/ScreenShot_tool.pdf>
-Package pdftex.def Info: figure/ScreenShot_tool.pdf used on input line 44.
+Package pdftex.def Info: figure/ScreenShot_tool.pdf used on input line 46.
 (pdftex.def)             Requested size: 426.79913pt x 193.48273pt.
-) (./tex/architecture.tex [3 <./figure/discovery_kdm_model.png> <./figure/discovery_java_model.png> <./figure/ScreenShot_tool.pdf>] <figure/Arquitetura.pdf, id=117, 342.27875pt x 261.97874pt>
+) (./tex/architecture.tex [3 <./figure/discovery_kdm_model.png> <./figure/discovery_java_model.png> <./figure/ScreenShot_tool.pdf>] <figure/Arquitetura.pdf, id=118, 342.27875pt x 261.97874pt>
 File: figure/Arquitetura.pdf Graphic file (type pdf)
  <use figure/Arquitetura.pdf>
 Package pdftex.def Info: figure/Arquitetura.pdf used on input line 9.
 (pdftex.def)             Requested size: 273.82335pt x 209.58327pt.
-) (./tex/related_work.tex) (./tex/conclusion.tex) (./tex/acknowledgements.tex) (./TSWLatexianTemp_000013.bbl [4 <./figure/Arquitetura.pdf>]
+) (./tex/related_work.tex) (./tex/conclusion.tex) [4 <./figure/Arquitetura.pdf>] (./tex/acknowledgements.tex) (./TSWLatexianTemp_000025.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
@@ -554,20 +436,20 @@ Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
 Package natbib Warning: There were undefined citations.
 
-[5] (./TSWLatexianTemp_000013.aux) ) 
+[5] (./TSWLatexianTemp_000025.aux) ) 
 Here is how much of TeX's memory you used:
- 5532 strings out of 493315
- 79911 string characters out of 6137904
- 147553 words of memory out of 5000000
- 8852 multiletter control sequences out of 15000+600000
- 35962 words of font info for 46 fonts, out of 8000000 for 9000
+ 4977 strings out of 493315
+ 69108 string characters out of 6137904
+ 137490 words of memory out of 5000000
+ 8300 multiletter control sequences out of 15000+600000
+ 42164 words of font info for 50 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,8n,43p,1706b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TSWLatexianTemp_000013.pdf (5 pages, 441578 bytes).
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on TSWLatexianTemp_000025.pdf (5 pages, 450462 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
- 137 compressed objects within 2 object streams
+ 223 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
