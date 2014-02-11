@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.25)  11 FEB 2014 16:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.9.25)  11 FEB 2014 16:42
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/rafaeldurelli/Dropbox/Artigos Elaborados/ARTIGO_SBES_2014_FERRAMENTA/TSWLatexianTemp_000025.tex"
-(/Users/rafaeldurelli/Dropbox/Artigos Elaborados/ARTIGO_SBES_2014_FERRAMENTA/TSWLatexianTemp_000025.tex
+**"/Users/rafaeldurelli/Dropbox/Artigos Elaborados/ARTIGO_SBES_2014_FERRAMENTA/TSWLatexianTemp_000028.tex"
+(/Users/rafaeldurelli/Dropbox/Artigos Elaborados/ARTIGO_SBES_2014_FERRAMENTA/TSWLatexianTemp_000028.tex
 LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
@@ -175,8 +175,8 @@ Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@posthook=\toks21
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/latin9.def
 File: latin9.def 2008/03/30 v1.1d Input encoding file
-)) (./tex/defines.tex) (./TSWLatexianTemp_000025.aux)
-\openout1 = `TSWLatexianTemp_000025.aux'.
+)) (./tex/defines.tex) (./TSWLatexianTemp_000028.aux)
+\openout1 = `TSWLatexianTemp_000028.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
 LaTeX Font Info:    ... okay on input line 43.
@@ -325,110 +325,26 @@ File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 17.
  <figure/discovery_kdm_model.png, id=15, 501.875pt x 98.3675pt>
-./tex/infrastrucute.tex:29: Missing number, treated as zero.
-<to be read again> 
-                   \relax 
-l.29 ...6cm\linewidth]{figure/discovery_kdm_model}
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./tex/infrastrucute.tex:29: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.29 ...6cm\linewidth]{figure/discovery_kdm_model}
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./tex/infrastrucute.tex:29: Missing number, treated as zero.
-<to be read again> 
-                   \relax 
-l.29 ...6cm\linewidth]{figure/discovery_kdm_model}
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./tex/infrastrucute.tex:29: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.29 ...6cm\linewidth]{figure/discovery_kdm_model}
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 File: figure/discovery_kdm_model.png Graphic file (type png)
-<use figure/discovery_kdm_model.png>
+ <use figure/discovery_kdm_model.png>
 Package pdftex.def Info: figure/discovery_kdm_model.png used on input line 29.
 (pdftex.def)             Requested size: 170.71652pt x 33.461pt.
  <figure/discovery_java_model.png, id=16, 501.875pt x 99.37125pt>
-./tex/infrastrucute.tex:35: Missing number, treated as zero.
-<to be read again> 
-                   \relax 
-l.35 ...cm\linewidth]{figure/discovery_java_model}
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./tex/infrastrucute.tex:35: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.35 ...cm\linewidth]{figure/discovery_java_model}
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./tex/infrastrucute.tex:35: Missing number, treated as zero.
-<to be read again> 
-                   \relax 
-l.35 ...cm\linewidth]{figure/discovery_java_model}
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./tex/infrastrucute.tex:35: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.35 ...cm\linewidth]{figure/discovery_java_model}
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 File: figure/discovery_java_model.png Graphic file (type png)
-<use figure/discovery_java_model.png>
+ <use figure/discovery_java_model.png>
 Package pdftex.def Info: figure/discovery_java_model.png used on input line 35.
 (pdftex.def)             Requested size: 170.71652pt x 33.80244pt.
- [2 <./figure/processoDaFerramenta.pdf>] <figure/ScreenShot_tool.pdf, id=76, 481.54906pt x 181.0514pt>
+ [2 <./figure/processoDaFerramenta.pdf>] <figure/ScreenShot_tool.pdf, id=76, 482.18614pt x 205.36385pt>
 File: figure/ScreenShot_tool.pdf Graphic file (type pdf)
  <use figure/ScreenShot_tool.pdf>
 Package pdftex.def Info: figure/ScreenShot_tool.pdf used on input line 46.
-(pdftex.def)             Requested size: 426.79913pt x 193.48273pt.
+(pdftex.def)             Requested size: 426.81197pt x 193.48073pt.
 ) (./tex/architecture.tex [3 <./figure/discovery_kdm_model.png> <./figure/discovery_java_model.png> <./figure/ScreenShot_tool.pdf>] <figure/Arquitetura.pdf, id=118, 342.27875pt x 261.97874pt>
 File: figure/Arquitetura.pdf Graphic file (type pdf)
  <use figure/Arquitetura.pdf>
 Package pdftex.def Info: figure/Arquitetura.pdf used on input line 9.
 (pdftex.def)             Requested size: 273.82335pt x 209.58327pt.
-) (./tex/related_work.tex) (./tex/conclusion.tex) [4 <./figure/Arquitetura.pdf>] (./tex/acknowledgements.tex) (./TSWLatexianTemp_000025.bbl
+) (./tex/related_work.tex) (./tex/conclusion.tex) [4 <./figure/Arquitetura.pdf>] (./tex/acknowledgements.tex) (./TSWLatexianTemp_000028.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
@@ -436,7 +352,7 @@ Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
 Package natbib Warning: There were undefined citations.
 
-[5] (./TSWLatexianTemp_000025.aux) ) 
+[5] (./TSWLatexianTemp_000028.aux) ) 
 Here is how much of TeX's memory you used:
  4977 strings out of 493315
  69108 string characters out of 6137904
@@ -446,7 +362,7 @@ Here is how much of TeX's memory you used:
  957 hyphenation exceptions out of 8191
  38i,8n,43p,1706b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TSWLatexianTemp_000025.pdf (5 pages, 450462 bytes).
+Output written on TSWLatexianTemp_000028.pdf (5 pages, 499934 bytes).
 PDF statistics:
  223 PDF objects out of 1000 (max. 8388607)
  140 compressed objects within 2 object streams
