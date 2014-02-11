@@ -1,0 +1,22 @@
+%Figure~\ref{fig:proline} depicts a screenshot of ProLine-RM. 
+%The DE phase is exhibited by letter ``A'' to ``C'' in Figure~\ref{fig:proline}. 
+%In order to illustrated the useful of the ProLine-RM and its functionalities we describe all activities necessaries to devise a ``persistence'' CFF. 
+As in development of any framework, firstly the expertise of the domain has to be got.
+Therefore, the domain related to ``persistence'' has been studied. 
+The outcome of such study were the identification of both the common features and its variants of the domain. 
+
+%After identifying the all features of the CFF the next activity is the development of the CFF. 
+In this activity all source code are developed and organized in packages. Each package contain source code (e.g., classes, aspects and methods) related to a feature. %For the purpose of accomplishing this activity we have used the approach described by~\citet{deCamargo:2008:PDC:1363686.1363863}, its aims is to assists and makes easier the develop of the CFF by using aspect oriented paradigm~\cite{Kiczales97aspect-orientedprogramming}. 
+
+Afterwards, the feature model depicting all features related to the domain has to be modeled. 
+Aiming to make easier the development of feature models, ProLine-RM provides a graphical way to assists the engineer devises them. 
+Figure~\ref{fig:proline}(C) shows the feature model that we have developed. 
+As can be seen, there are two set of mandatory features and two groups related to optional features as well.  
+%The first one, called ``Persistence'' aims to introduce a set of persistence operations into application persistence classes (e.g., store, remove, update, perform queries). 
+%The second feature, named ``Connection'' is related to the database connection concern and identifies points in the application code where the connection must be opened and closed. 
+%This feature has variabilities, as for example Data Base Management System (e.g., MySQL, SyBase, Native and Interbase).
+%There are two optional features as well. The former is called ``Caching'', which is responsible to deals with high-performance to gets datas of the databases.
+%The second, named ``Pooling'' is represented a set of database connections maintained by the databases.
+
+After developing the CFF and the its feature model, them have to be uploaded in a remote repository in order to be reused during the AE phase.
+Prior to uploading these artifacts, informations (e.g., Named of CFF, Author(s) and Description) associated with the ``persistence'' CFF has to be filled in. Figure~\ref{fig:proline}(A) shows an example, which the CFF and its feature model are being uploaded. In the next section is described how to reuse the ``persitence'' CFF.
