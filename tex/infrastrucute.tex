@@ -18,8 +18,8 @@ This PSM represents an Abstract Syntax Tree (AST) that represents the syntactic 
 \label{fig:process}
 \end{figure} 
 
-As long as the user has triggered the earlier step, the next one is to transform the PSM to a Platform-Indented Model (PIM) based on the KDM. 
-Therefore, in this step the tool performs a set of model-to-model to get an instance of the KDM which represents the systems ``AS-IS''. 
+As long as the user has triggered the earlier level, the next one (\textbf{Level-2}) is to transform the PSM to a Platform-Indented Model (PIM) based on the KDM. 
+Therefore, in this level the tool performs a set of model-to-model to get an instance of the KDM which represents the systems ``AS-IS''. These transformations are performed by ATL (ATL Transformation Language)\footnote{https://www.eclipse.org/atl/}.
 In Figure~\ref{fig:discovery_kdm_model} depicts how to get the instance of the KDM based on the earlier PSM.
 
 \begin{figure}
@@ -38,7 +38,7 @@ In Figure~\ref{fig:discovery_kdm_model} depicts how to get the instance of the K
 \end{minipage}
 \end{figure}
 
-In Figure~\ref{fig:interface} we depicted the main window of our \textit{plug-in} and for explanation purpose, we have identified main regions, i.e., (A), (B), (C) and (D).
+In Figure~\ref{fig:interface} we depicted the main window of our \textit{plug-in} and for explanation purpose, we have identified main regions, i.e., \textcircled{a}, \textcircled{b}, \textcircled{c} and \textcircled{d}.
 
 \begin{figure}[!ht]
 \centering
@@ -47,3 +47,9 @@ In Figure~\ref{fig:interface} we depicted the main window of our \textit{plug-in
 \caption{KDM-RE's Interface}
 \label{fig:interface}
 \end{figure}
+
+After get the PIM, the engineer can realize the refactorings in the instance of the KDM. In order to assist this activity, our \textit{plug-in} provides a popup menu, which depicts all refactorings that can be done by using it. In Figure~\ref{fig:interface} \textcircled{a} shows all 16 refactorings that have been implemented in KDM-RE.  For illustration purposes only we drew rectangles to separate the refactorings into three groups. The black rectangle represents refactorings that deal with generalization, the blue rectangle stand for refactorings to organize data and the red one symbolize refactoring to assist the moving features between objects.
+
+
+
+
