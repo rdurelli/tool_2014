@@ -8,9 +8,8 @@ Furthermore, our process is divided into six levels (Level-0 to Level-1), as can
 
 Firstly, the engineer starts the process in the \textbf{Level-0} by choosing an eclipse project which contains the source-code to realize the refactorings.  
 After that, into \textbf{Level-1} the source-code need to be transformed into a Platform-Specific Model (PSM). 
-This PSM is an instance of the source-code which represents all abstraction of the source-code. 
-Figure~\ref{fig:discovery_java_model} illustrates how KDM-RE manages to assist the engineer to get the instance of this PSM. 
-Notice that an eclipse project must be set as input in this level - then the engineer can click in the popup menu named ``Discovery Java Model''.
+This PSM is an instance of the source-code which represents all abstraction of the source-code. To realize this transformation we implemented a model extractor in Java. To implement this model extractor we carried out three activities: 1) definition of the Java grammar, 2) mapping of Java grammar elements to elements of Java Model, and 3) implementation of the model extractor. For the definition of the Java grammar we used the Xtext\footnote{https://www.eclipse.org/Xtext/} framework. Using this framework we obtained automatically three artifacts: 1) a metamodel, 2) a textual editor and 3) a Java parser that allow us to recognize the elements of the Java grammar from code written in java. 
+Figure~\ref{fig:discovery_java_model} illustrates how KDM-RE manages to assist the engineer to get the instance of this PSM. Figure~\ref{fig:discovery_java_model} (a) shows the eclipse project selected by the engineer - then after the engineer click in a popup menu named ``Discovery Java Model'' the Figure~\ref{fig:discovery_java_model} (b) is shown an excerpt to indicate the correspondence with the legacy Java Model.
 %This PSM is an Abstract Syntax Tree (AST) that represents the syntactic struct of Java source code.
 
 \begin{figure}[!ht]
@@ -31,13 +30,13 @@ In Figure~\ref{fig:discovery_kdm_model} depicts how to get the instance of the K
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=6cm]{figure/discovery_java_model}
+  \includegraphics[width=7cm]{figure/GerandoOJAva}
   \caption{Discovery Java Model}
   \label{fig:discovery_java_model}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=6cm]{figure/discovery_kdm_model}
+  \includegraphics[width=7cm]{figure/GerandoOKDM}
   \caption{Discovery KDM Model}
   \label{fig:discovery_kdm_model}
 \end{minipage}
@@ -60,7 +59,9 @@ All refactorings provided by KDM-RE are based on the KDM model.
 In order to assist the refactorings we extended the KDM's model browser provided by MoDisco\footnote{http://www.eclipse.org/MoDisco/}. 
 More specifically, we added a popup menu named ``Refactoring KDM'' in this model browser, see Figure~\ref{fig:interface}.
 By using this menu the engineer can interact with the KDM model and choose which refactoring must be carried out in the model.
-In the region \textcircled{a} (see Figure~\ref{fig:interface}) it can be seen this popup menu and all 16 refactorings that have been implemented in KDM-RE. 
+In the region \textcircled{a} (See Figure~\ref{fig:interface}) can be seen all 16 refactorings that have been implemented in KDM-RE. 
+The start of every refactoring is a engineer action in the Eclipse workbench.
+To make sure the refactorings were completely integrated into the IDE we created entries for the normal menu (See See Figure~\ref{fig:interface} \textcircled{a}), for the context-menu as well as keyboard shortcuts.
 For illustration purposes only we drew rectangles to separate the refactorings into three groups. 
 The black rectangle represents refactorings that deal with generalization, the blue rectangle stand for refactorings to organize data and the red one symbolize refactoring to assist the moving features between objects.
 
@@ -74,8 +75,33 @@ KDM-RE also supplies a multiple versions of a system at level models (KDM) which
 
 \subsection{Executing Refactoring KDM-RE}
 
+After the engineer clicks on the menu-item (See See Figure~\ref{fig:interface} \textcircled{a}) and choose which refactoring to apply, a method run() in the class related to the chosen refactoring is being called. In this method the refactoring classes and a ``RefactoringWizard'' are started. In every refactoring the KDM file must be analyzed to find the meta-classes that are affected by a specific refactoring. Because of the structure of the KDM file, the easiest way to do this, is a traversal using the visitor pattern~\cite{gamma}. Therefore we implemented the visitor pattern in KDM-RE to assist the travel of all meta-classes in a correct order.
+
+For explanation purpose pretend that the engineer found out that one class is doing work that should be done by two, thus, he must apply the refactoring ``Extract Class''. As stated earlier the first step is to select the class that should be extracted into a separate class, this step is illustrated in Figure~\ref{fig:wizard} left side. After selecting the class, a right-click opens the context menu where the refactoring is accessible. After the click, a scan that checks if a valid statement is covered by the selection, is started. If there are not any valid statements within the selection, an error message is displayed. If all checks were successful, the system displays the ``RefactoringWizard'' to the engineer. Figure~\ref{fig:wizard} depicts the Extract Class Wizard. In this wizard, the name of the new class can be set. Also a preview of all detected fields and methods can be chosen to put into the new class. Further, the engineer can select if either the new class will be a top level class or a nested class. The engineer also can select if accessors methods (gets and sets) must be created. Finally, the engineer can set the name of the field that represent the link between the two classes (the old class and the new one). After all of the required inputs have been made, the engineer can click on the button ``Finish'' and a new class is created by KDM-RE.
+
+\begin{figure}[!ht]
+\centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=15cm, height=8cm]{figure/Figura_ExtractClass2}
+\caption{Extract Class Wizard}
+\label{fig:wizard}
+\end{figure}
+
+
 Following the levels 
 
 The necessary steps to use KDM-RE are exemplified by the executing of some refactorings. Due space limitation herein is not shown all 16 refactorings. 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
