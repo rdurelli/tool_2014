@@ -4,7 +4,7 @@ It is split into three parts, they are:
 (\textit{i}) Reverse Engineering, 
 (\textit{ii}) Refactorings and 
 (\textit{iii}) Forward Engineering. 
-Furthermore, our process is divided into six levels (Level-0 to Level-1), as can be seen in Figure~\ref{fig:process}. 
+Furthermore, our process is divided into six levels (\textbf{Level-0} to \textbf{Level-1}), as can be seen in Figure~\ref{fig:process}. 
 
 Firstly, the engineer starts the process in the \textbf{Level-0} by choosing an eclipse project which contains the source-code to realize the refactorings.  
 After that, into \textbf{Level-1} the source-code need to be transformed into a Platform-Specific Model (PSM). 
@@ -21,25 +21,17 @@ Figure~\ref{fig:discovery_java_model} illustrates how KDM-RE manages to assist t
 \end{figure} 
 
 After creating the PSM the next level (\textbf{Level-2}) consists in transforming the PSM to a Platform-Indented Model (PIM) which is based on the KDM. 
-Therefore, in this level the KDM-RE performs a set of model-to-model transformation to get an instance of the KDM which represents the systems ``AS-IS''. 
-These transformations are performed by ATL (ATL Transformation Language)\footnote{https://www.eclipse.org/atl/} along with MoDisco.
+In this level the KDM-RE performs a set of M2M (Model-To-Model) transformation to get an instance of the KDM which represents the systems ``AS-IS''. 
+These transformations are performed by ATL (ATL Transformation Language)\footnote{https://www.eclipse.org/atl/}.
 Similarly, the KDM-RE also provides a popup menu named ``Discovery KDM Model'' which by clicking on it the engineer gets a instance of the KDM based on the earlier PSM.
-In Figure~\ref{fig:discovery_kdm_model} depicts how to get the instance of the KDM.
+In Figure~\ref{fig:discovery_java_model}(c) shows how the Java Model is transformed to KDM.
 
-\begin{figure}
+\begin{figure}[!ht]
 \centering
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=7cm]{figure/GerandoOJAva}
-  \caption{Discovery Java Model}
-  \label{fig:discovery_java_model}
-\end{minipage}%
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=7cm]{figure/GerandoOKDM}
-  \caption{Discovery KDM Model}
-  \label{fig:discovery_kdm_model}
-\end{minipage}
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=13cm, height=6cm]{figure/GerandoTODOS}
+\caption{Process to Discovery Java and KDM Model}
+\label{fig:discovery_java_model}
 \end{figure}
 
 In Figure~\ref{fig:interface} we depicted the main window of our \textit{plug-in}. 
@@ -57,20 +49,19 @@ All refactorings provided by KDM-RE are based on the KDM model.
 %Thus, suppose that a KDM model has already been instantiated. 
 %All the steps to how obtain a KDM instance are explained further. 
 In order to assist the refactorings we extended the KDM's model browser provided by MoDisco\footnote{http://www.eclipse.org/MoDisco/}. 
-More specifically, we added a popup menu named ``Refactoring KDM'' in this model browser, see Figure~\ref{fig:interface}.
+We added a popup menu named ``Refactoring KDM'' in this model browser, see Figure~\ref{fig:interface}\textcircled{a}.
 By using this menu the engineer can interact with the KDM model and choose which refactoring must be carried out in the model.
-In the region \textcircled{a} (See Figure~\ref{fig:interface}) can be seen all 16 refactorings that have been implemented in KDM-RE. 
+In the region \textcircled{a} can be seen all 16 refactorings that have been implemented in KDM-RE. 
 The start of every refactoring is a engineer action in the Eclipse workbench.
-To make sure the refactorings were completely integrated into the IDE we created entries for the normal menu (See See Figure~\ref{fig:interface} \textcircled{a}), for the context-menu as well as keyboard shortcuts.
 For illustration purposes only we drew rectangles to separate the refactorings into three groups. 
 The black rectangle represents refactorings that deal with generalization, the blue rectangle stand for refactorings to organize data and the red one symbolize refactoring to assist the moving features between objects.
 
-The region \textcircled{b} (see Figure~\ref{fig:interface}) shows a class diagram. This diagram is generated as the engineer performs the refactorings in KDM model, i.e., changes are reproduced on the fly in a class diagram.
+The region \textcircled{b} (see Figure~\ref{fig:interface}) shows a class diagram that is generated as the engineer performs the refactorings in KDM model, i.e., changes are reproduced on the fly in a class diagram.
 We claim that this is important once the class diagram provides an abstract view of the system, hence, the engineer can visually check the system's changes after applying a set of refactorings. 
 In addition, usually the source code is the only available artifact of the legacy software. 
 Therefore, creating a class diagram makes, both the legacy software and the generated software to have a new type of artifact (i.e., UML class models), improving their documentation.
 
-KDM-RE also supplies a multiple versions of a system at level models (KDM) which allows the engineer to work interactively on multiple models and to explore alternate refactoring path. As can see in the region \textcircled{c} (see Figure~\ref{fig:interface}), the engineer must select a KDM file, then he must right-click on the mouse to appear a popup menu named ``Versions''. By releasing the mouse on this menu, three options will show: (\textit{i}) List of changes, (\textit{ii}) Delete version and (\textit{iii}) Create a child version. The last option create a copy of the KDM file - then the engineer can explore another refactoring path. The second option delete a version and the first option shows all changes that have been realized in a current KDM file, all changes are depicted in an Eclipse View, as shown in region \textcircled{d}, as can be seen the changes.
+KDM-RE also supplies a multiple versions of a system at level models (KDM) which allows the engineer to work interactively on multiple models and to explore alternate refactoring path. As can see in the region \textcircled{c} (see Figure~\ref{fig:interface}), the engineer must select a KDM file, then he must right-click on the mouse to appear a popup menu named ``Versions''. By releasing the mouse on this menu, three options is shown: (\textit{i}) List of changes, (\textit{ii}) Delete version and (\textit{iii}) Create a child version. The last option create a copy of the KDM file - then the engineer can explore another refactoring path. The second option delete a specific version - first option shows all changes that have been realized in a current KDM file, all changes are depicted in an Eclipse View, as shown in region \textcircled{d}. In this View it is possible to visualize the author that have committed the changes, the project and all refactorings realized.
 
 
 \subsection{Executing Refactoring KDM-RE}
