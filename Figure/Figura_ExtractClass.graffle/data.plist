@@ -169,7 +169,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2014-02-14 10:33:01 +0000</string>
+	<string>2014-02-21 13:28:05 +0000</string>
 	<key>Modifier</key>
 	<string>Durelli</string>
 	<key>NotesVisible</key>
@@ -250,7 +250,7 @@
 			</dict>
 		</array>
 		<key>Frame</key>
-		<string>{{832, 454}, {1256, 1114}}</string>
+		<string>{{14, 47}, {1256, 731}}</string>
 		<key>ListView</key>
 		<true/>
 		<key>OutlineWidth</key>
@@ -264,15 +264,15 @@
 		<key>SidebarWidth</key>
 		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{-2, -96}, {1121, 975}}</string>
+		<string>{{-304, -63}, {1724.6154478739022, 910.7692641760483}}</string>
 		<key>Zoom</key>
-		<real>1</real>
+		<real>0.64999997615814209</real>
 		<key>ZoomValues</key>
 		<array>
 			<array>
 				<string>Canvas 1</string>
-				<real>1</real>
-				<real>1</real>
+				<real>0.64999997615814209</real>
+				<real>0.67000001668930054</real>
 			</array>
 		</array>
 	</dict>
