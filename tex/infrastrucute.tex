@@ -1,4 +1,4 @@
-In this section the \textbf{K}nowledge \textbf{D}iscovery \textbf{M}odel-\textbf{R}efactoring \textbf{E}nvironment (KDM-RE) is presented. 
+In this section the KDM-RE is presented. 
 In Figure~\ref{fig:process} we depict the overall process of our technique which was adapted based on the horseshoe modernization model. 
 It is split into three parts, they are: 
 (\textit{i}) Reverse Engineering, 
@@ -23,7 +23,7 @@ Figure~\ref{fig:discovery_java_model} illustrates how KDM-RE manages to assist t
 \end{figure} 
 
 After creating the PSM the next level (\textbf{Level-2}) consists in transforming the PSM to a Platform-Indented Model (PIM) which is based on the KDM. 
-In this level the KDM-RE performs a set of M2M (Model-To-Model) transformation to get an instance of the KDM which represents the systems ``AS-IS''. 
+In this level the KDM-RE performs a set of  Model-To-Model (M2M) transformation to get an instance of the KDM which represents the systems ``AS-IS''. 
 These transformations are performed by ATL (ATL Transformation Language)\footnote{https://www.eclipse.org/atl/}.
 Similarly, the KDM-RE also provides a popup menu named ``Discovery KDM Model'' which by clicking on it the engineer gets a instance of the KDM based on the earlier PSM.
 In Figure~\ref{fig:discovery_java_model}(c) shows how the Java Model is transformed to KDM.
@@ -78,19 +78,19 @@ After the engineer clicks on the menu-item (see Figure~\ref{fig:interface} \text
 \label{fig:wizard}
 \end{figure}
 
-For explanation purpose pretend that the engineer found out that one class is doing work that should be done by two, thus, he must apply the refactoring ``Extract Class''. As stated earlier the first step is to select the metaclass that should be extracted into a separate one, this step is illustrated in Figure~\ref{fig:wizard}(a). After selecting the metaclass, a right-click opens the context menu where the refactoring is accessible. After the click, the system displays the ``RefactoringWizard'' to the engineer, Figure~\ref{fig:wizard}(b) depicts the Extract Class Wizard. In this wizard, the name of the new metaclass can be set. Also a preview of all detected ``StorableUnits'' and ``MethodUnits'' can be chosen to put into the new metaclass. Further, the engineer can select if either the new metaclass will be a top level metaclass or a nested metaclass. The engineer also can select if the KDM-RE must create instances of ``MethodUnits'' represent accessors methods (gets and sets). Finally, the engineer can set the name of the ``StorableUnit'' that represent the link between the two metaclasses (the old metaclass and the new one). After all of the required inputs have been made, the engineer can click on the button ``Finish'' and the refactoring ``Extract Class'' is performed by KDM-RE. As can be seen in Figure~\ref{fig:wizard}(c) a new instance of ``ClassUnit'' named ``Document'' was created - two StorableUnit from ``Pessoa'', i.e., ``rg'' and ``CPF'' were moved to the new ``ClassUnit'' - instances of ``MethodUnits'' were also created to represent the gets and sets. In addition, the instance of ``ClassUnit'' named ``Pessoa'' owns a new instance of ``StorableUnit'' that represent the link between both ``ClassUnits''. Due space limitation the other ``StorableUnits'' of ``ClassUnit'' named ``Pessoa'' are not shown in Figure~\ref{fig:wizard}(c).
+For explanation purpose pretend that the engineer found out that one class is doing work that should be done by two, thus, he must apply the refactoring ``Extract Class''. As stated earlier the first step is to select the metaclass that should be extracted into a separate one, this step is illustrated in Figure~\ref{fig:wizard}(a). After selecting the metaclass, a right-click opens the context menu where the refactoring is accessible. After the click, the system displays the ``RefactoringWizard'' to the engineer, Figure~\ref{fig:wizard}(b) depicts the Extract Class Wizard. In this wizard, the name of the new metaclass can be set. Also a preview of all detected ``StorableUnits'' and ``MethodUnits'' can be chosen to put into the new metaclass. Further, the engineer can select if either the new metaclass will be a top level metaclass or a nested metaclass. The engineer also can select if the KDM-RE must create instances of ``MethodUnits'' to represent accessors methods (gets and sets). Finally, the engineer can set the name of the ``StorableUnit'' that represent the link between the two metaclasses (the old metaclass and the new one). After all of the required inputs have been made, the engineer can click on the button ``Finish'' and the refactoring ``Extract Class'' is performed by KDM-RE. As can be seen in Figure~\ref{fig:wizard}(c) a new instance of ``ClassUnit'' named ``Document'' was created - two StorableUnit from ``Pessoa'', i.e., ``rg'' and ``CPF'' were moved to the new ``ClassUnit'' - instances of ``MethodUnits'' were also created to represent the gets and sets. In addition, the instance of ``ClassUnit'' named ``Pessoa'' owns a new instance of ``StorableUnit'' that represent the link between both ``ClassUnits''. Due space limitation the other ``StorableUnits'' of ``ClassUnit'' named ``Pessoa'' are not shown in Figure~\ref{fig:wizard}(c).
 
 After the engineer realize the refactoring a UML class diagram is created on the fly to mirror graphically all changes performed in the KDM model, see Figure~\ref{fig:interface}\textcircled{b}. Moreover, the KDM-RE creates/updates a tracking log to show the historic of all changes performed in the system, as can be see in Figure~\ref{fig:interface}\textcircled{d}. 
 
 \subsection{Forward Engineering}
-After the engineer realize the refactoring the next steps are to transform the KDM model to a PSM (Java Model) and to generate the refactored source-code conforming the PSM. The former step is carried out based on a set of transformations using ATL, due space limitation these transformations are not depicted. The latter was performed by using a textual template approach, such as the Acceleo. A template can be thought of as the target text with holes for variable parts. The holes contain metacode which is run at template instantiation time to compute the variable parts.
+After the engineer realize the refactoring the next steps are to transform the KDM model to a PSM, i.e., a Java Model and to generate the refactored source-code conforming the PSM. The former step is carried out based on a set of transformations using ATL, due space limitation these transformations are not depicted. The latter was performed by using a textual template approach, such as the Acceleo\footnote{http://www.eclipse.org/acceleo/}. A template can be thought of as the target text with holes for variable parts. The holes contain metacode which is run at template instantiation time to compute the variable parts. In Figure~\ref{fig:forward_Engineering} the generation of source code using template is depicted.
 
 \begin{figure}[!ht]
 \centering
   % Requires \usepackage{graphicx}
   \includegraphics[scale=0.48]{figure/ForwardEngineering}
-\caption{Extract Class Wizard}
-\label{fig:wizard}
+\caption{Forward Engineering steps}
+\label{fig:forward_Engineering}
 \end{figure}
 
 
