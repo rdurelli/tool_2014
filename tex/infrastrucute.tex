@@ -27,7 +27,7 @@ In this level the KDM-RE performs a set of  Model-To-Model (M2M) transformation 
 These transformations are performed by ATL (ATL Transformation Language)\footnote{https://www.eclipse.org/atl/}.
 Similarly, the KDM-RE also provides a popup menu named ``Discovery KDM Model'' which by clicking on it the engineer gets a instance of the KDM based on the earlier PSM.
 In Figure~\ref{fig:discovery_java_model}(c) shows how the Java Model is transformed to KDM.
-
+%
 \begin{figure}[!ht]
 \centering
   % Requires \usepackage{graphicx}
@@ -35,7 +35,7 @@ In Figure~\ref{fig:discovery_java_model}(c) shows how the Java Model is transfor
 \caption{Process to Discovery Java and KDM Model}
 \label{fig:discovery_java_model}
 \end{figure}
-
+%
 In Figure~\ref{fig:interface} we depicted the main window of our \textit{plug-in}. 
 For explanation purpose, we have identified main regions, i.e., \textcircled{a}, \textcircled{b}, \textcircled{c} and \textcircled{d}.
 
@@ -68,7 +68,7 @@ KDM-RE also supplies a multiple versions of a system at level models (KDM) which
 
 \subsection{Executing Refactoring KDM-RE}
 
-After the engineer clicks on the menu-item (see Figure~\ref{fig:interface} \textcircled{a}) and choose which refactoring to apply, a method run() in the class related to the chosen refactoring is being called. In this method the refactoring classes and a ``RefactoringWizard'' are started. In every refactoring the KDM file must be analyzed to find the meta-classes that are affected by a specific refactoring. Because of the structure of the KDM file, the easiest way to do this, is a traversal using the visitor pattern~\cite{gamma}. Therefore we implemented the visitor pattern in KDM-RE to assist the travel of all meta-classes in a correct order.
+After the engineer clicks on the menu-item (see Figure~\ref{fig:interface} \textcircled{a}) and choose which refactoring to apply, a method run() in the class related to the chosen refactoring is being called. In this method the refactoring classes and a ``RefactoringWizard'' are started. In every refactoring the KDM file must be analyzed to find the meta-classes that are affected by a specific refactoring. Because of the structure of the KDM file, the easiest way to do this, is a traversal using the visitor pattern~\cite{Gamma1994}. Therefore we implemented the visitor pattern in KDM-RE to assist the travel of all meta-classes in a correct order.
 
 \begin{figure}[!ht]
 \centering
