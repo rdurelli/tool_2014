@@ -1,0 +1,72 @@
+\begin{thebibliography}{}
+
+\bibitem[Boger and Sturm, 2002]{Boger2002}
+Boger, M. and Sturm, T. (2002).
+\newblock Tool-support for model-driven software engineering.
+\newblock In {\em In Proceedings of Practical UML-Based Rigorous Development
+  Methods}.
+
+\bibitem[Fowler et~al., 2000]{refactImpro}
+Fowler, M., Beck, K., Brant, J., Opdyke, W., and Roberts, D. (2000).
+\newblock {\em {Refactoring: Improving the Design of Existing Code}}.
+\newblock Addison-Wesley.
+
+\bibitem[Gorp et~al., 2003]{Gorp03towardsautomating}
+Gorp, P.~V., Stenten, H., Mens, T., and Demeyer, S. (2003).
+\newblock Towards automating source-consistent uml refactorings.
+\newblock In {\em International Conference on UML - The Unified Modeling
+  Language}, pages 144--158. Springer.
+
+\bibitem[Kleppe et~al., 2003]{Kleppe:2003}
+Kleppe, A.~G., Warmer, J., and Bast, W. (2003).
+\newblock {\em MDA Explained: The Model Driven Architecture: Practice and
+  Promise}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., Boston, MA, USA.
+
+\bibitem[Misbhauddin and Alshayeb, 2012]{ModelDrivenRefactoring}
+Misbhauddin, M. and Alshayeb, M. (2012).
+\newblock Model-driven refactoring approaches: A comparison criteria.
+\newblock In {\em Sofware Engineering and Applied Computing (ACSEAC), 2012
+  African Conference on}.
+
+\bibitem[{OMG}, 2012]{OMGADM}
+{OMG} (2012).
+\newblock {Object Management Group (OMG) Architecture-Driven Modernisation}.
+\newblock Dispon\'ivel em:
+  \emph{http://www.omgwiki.org/admtf/doku.php?id=start}.
+\newblock (Acessado 2 de Agosto de 2012).
+
+\bibitem[Opdyke, 1992]{Opdy92b}
+Opdyke, W.~F. (1992).
+\newblock {\em {Refactoring Object-Oriented Frameworks}}.
+\newblock Ph.\textsc{D}. \textsc{T}hesis, University of Illinois.
+
+\bibitem[Perez-Castillo et~al., 2009]{1686216}
+Perez-Castillo, R., de~Guzman, I. G.-R., Avila-Garcia, O., and Piattini, M.
+  (2009).
+\newblock On the use of adm to contextualize data on legacy source code for
+  software modernization.
+\newblock In {\em Proceedings of the 2009 16th Working Conference on Reverse
+  Engineering}, WCRE '09, pages 128--132, Washington, DC, USA. IEEE Computer
+  Society.
+
+\bibitem[Reimann et~al., 2010]{Models2010}
+Reimann, J., Seifert, M., and Abmann, U. (2010).
+\newblock Role-based generic model refactoring.
+\newblock In {\em In ACM/IEEE 13th International Conference on Model Driven
+  Engineering Languages and Systems (MoDELS 2013)}. Springer.
+
+\bibitem[Thorsten~Arendt, 2013]{ModelsEMFREfactorin}
+Thorsten~Arendt, Timo~Kehrer, G.~T. (2013).
+\newblock Understanding complex changes and improving the quality of uml and
+  domain-specific models.
+\newblock In {\em In ACM/IEEE 16th International Conference on Model Driven
+  Engineering Languages and Systems (MoDELS 2013)}.
+
+\bibitem[Ulrich and Newcomb, 2010]{Ulrich:2010:IST:1841736}
+Ulrich, W.~M. and Newcomb, P. (2010).
+\newblock {\em Information Systems Transformation: Architecture-Driven
+  Modernization Case Studies}.
+\newblock Morgan Kaufmann Publishers Inc., San Francisco, CA, USA.
+
+\end{thebibliography}

@@ -1,19 +1,27 @@
 
 
+
+%ABSTRACT defined by Valter
+
+Architecture-Driven Modernization (ADM) it is a new proposal defined by OMG that aims to apply Model-Driven Modernization (MDD) to legacy system. Its main metamodel is KDM, which is language and platform independent and allows representing various artifacts of a system at different abstraction levels. For this type of modernization be adequately done, model-driven refactoring need to be developed. However, there is a lack in the literature of tool to lead modernizer engineer to apply refactorings in the KDM metamodel, which complicates the modernization task. To fulfill this lack, in this paper we describe a tool, that implements 17 fine-grained refactorings proposed by Fowler in KDM's instances. In order to provide support to the modernizer engineer, these instances can be visualized as UML class diagrams. Therefore, the modernizer engineer can detect 
+"model smells" in these diagrams and apply the refactorings.
+
+
+
+
 %ABSTRACT 1
-Software refactoring is a proven technique that aims at improving the quality of source code.
- However, nowadays with the advent of Architecture-Driven Modernization (ADM), 
-which follows the Model-Driven Architecture (MDA) principles and uses the Knowledge Discovery Metamodel (KDM), 
-it seems a good alternative for moving from software refactoring to model-driven refactoring in order to create a language and platform independent catalog of refactoring. 
-Nevertheless, although ADM provides the process for refactoring legacy systems, is so far missing an Integrated Development Environments (IDEs) 
-to lead engineers to automatically apply refactorings as such exist in others object-oriented languages.
- We describe a tool, implemented as an Eclipse \textit{plug-in} designed to fulfill exactly this need. 
-This tool supports 16 refactorings that are heavily inspired by refactorings well known in the literature and yet keeping them in synch with the underlying source code. 
-Our tool involves three steps: (\textit{i}) reverse engineering, (\textit{ii}) refactoring by means of KDM,
- and (\textit{iii}) forward engineering. 
-The first step relies on transforming the source code into a KDM's instance. 
-The second step relies on applying refactorings into the KDM's instance. 
-The third step consists of generating the refactored source-code.
+%Software refactoring is a proven technique that aims at improving the quality of source code.
+ %However, with the advent of Architecture-Driven Modernization (ADM) and its meta-model - Knowledge Discovery Metamodel (KDM), it seems a good alternative for shifting from source-code refactoring to model-driven refactoring. The main goal of this shift is to create a language and platform independent catalog of refactoring. 
+%Nevertheless, although ADM provides the process for refactoring legacy systems by using KDM, there is a lack of an Integrated Development Environments (IDEs) to lead engineers to apply refactorings as such exist for other object-oriented languages.
+%To fulfill this lack herein we describe a tool, implemented as an Eclipse \textit{plug-in}. 
+%This \textit{plug-in} supports 17 well known refactorings that are adapted to KDM. It also provides a mechanism to synchronize both the underlying source code and a class diagram after one applies all refactorings into the KDM.
+
+%These refactorings are heavily inspired by well known refactorings in the literature. All refactorings were adapted in order to be applied into KDM models and yet keeping them in synch with the underlying source code as well as a class diagram. 
+%Our tool involves three steps: (\textit{i}) reverse engineering, (\textit{ii}) refactoring by means of KDM,
+ %and (\textit{iii}) forward engineering. 
+%The first step relies on transforming the source code into a KDM's instance. 
+%The second step relies on applying refactorings into the KDM's instance. 
+%The third step consists of generating the refactored source-code.
 
 
 %ABSTRACT 2
