@@ -27,9 +27,7 @@
 \input{tex/defines}
 \title{\papertitle}
 
-\author{Rafael S. Durelli\inst{1}, Daniel S. M. Santib\'{a}\~{n}ez\inst{2} , M\'{a}rcio E. Delamaro\inst{1} \\and Valter V. de Camargo\inst{2}}
-
- 
+\author{Rafael S. Durelli\inst{1}, Bruno  M. Santos\inst{2}, Raphael R. Honda\inst{2}, \\  M\'{a}rcio E. Delamaro\inst{1} and Valter V. de Camargo\inst{2}}
 \address{Computer  Systems Department University of S\~{a}o Paulo - ICMC\\
   S\~{a}o Carlos, SP, Brazil.
 \nextinstitute
@@ -97,7 +95,7 @@ Available object-oriented refactoring catalogues are not reusable as they are, b
 
 This sections describes a \textit{plug-in} on the top of the Eclipse Platform named \textbf{K}nowledge \textbf{D}iscovery \textbf{M}odel-\textbf{R}efactoring \textbf{E}nvironment (KDM-RE). 
 In Figure~\ref{fig:interface} we depicted the main window of our \textit{plug-in}. 
-For explanation purpose, we have identified main regions, i.e., \textcircled{a}, \textcircled{b}, \textcircled{c} and \textcircled{d}.
+For explanation purpose, we have identified main regions, i.e., \textcircled{a}, and \textcircled{b}.
 It supports 17 refactorings adapted to KDM. These refactorings are based on some fine-grained refactorings proposed by Fowler~\cite{refactImpro}. All the adapted refactorings are shown in Table~\ref{tab:adaptedRefactoring}. We chose the Fowler's refactorings once them are well known, basic and fine-grained refactorings. Please, not that KDM-RE uses MoDisco\footnote{\url{http://www.eclipse.org/MoDisco/}} once it provides an extensible framework to transform an specific source-code to KDM models.
 
 
@@ -107,13 +105,13 @@ It supports 17 refactorings adapted to KDM. These refactorings are based on some
 \label{tab:adaptedRefactoring}
 \centering
   % Requires \usepackage{graphicx}
-  \includegraphics[scale=0.67]{Figure/Catalogue}
+  \includegraphics[scale=0.67]{Figure/catalogue2}
 \end{table}
 
 \begin{figure}[!ht]
 \centering
   % Requires \usepackage{graphicx}
-  \includegraphics[width=15cm, height=6.8cm]{figure/ScreenShot_with_UML}
+  \includegraphics[width=14cm, height=6.8cm]{figure/ScreenShot_with_UML2}
 \caption{KDM-RE's Interface}
 \label{fig:interface}
 \end{figure}
@@ -122,7 +120,7 @@ It supports 17 refactorings adapted to KDM. These refactorings are based on some
 %All the steps to how obtain a KDM instance are explained further. 
 %In order to assist the refactorings we extended the KDM's model browser provided by MoDisco. 
 
-Starting from the popup menu named ``Refactoring KDM'', in this model browser, see Figure~\ref{fig:interface}\textcircled{a}, either the software developer or software modernizer can interact with the KDM model and choose which refactoring must be carried out in the KDM.
+In Figure~\ref{fig:interface} is presented just a snippet of KDM-RE. Starting from the popup menu named ``Refactoring KDM'', in this model browser, see Figure~\ref{fig:interface}\textcircled{a}, either the software developer or software modernizer can interact with the KDM model and choose which refactoring must be carried out in the KDM.
 %
 %We added a popup menu named ``Refactoring KDM'' in this model browser, see Figure~\ref{fig:interface}\textcircled{a}.
 %By using this menu the engineer can interact with the KDM model and choose which refactoring must be carried out in the KDM.
@@ -136,7 +134,7 @@ We claim that the latter use of this UML class diagram is important once it prov
 In addition, in the context of modernization of a legacy system usually the source-code is the only available artifact of that legacy system. 
 Therefore, creating an UML class diagram makes, both the legacy system and the generated software to have a new type of artifact (i.e., UML class models), improving their documentation.
 
-KDM-RE also supplies a multiple versions of a system at level models (KDM) which allows the engineer to work interactively on multiple models and to explore alternate refactoring path. As can see in the region \textcircled{c} (see Figure~\ref{fig:interface}), the engineer must select a KDM file, then he must right-click on the mouse to appear a popup menu named ``Versions''. By releasing the mouse on this menu, three options is shown: (\textit{i}) List of changes, (\textit{ii}) Delete version and (\textit{iii}) Create a child version. The last option create a copy of the KDM file - then the engineer can explore another refactoring path. The second option delete a specific version - first option shows all changes that have been realized in a current KDM file, all changes are depicted in an Eclipse View, as shown in region \textcircled{d}. In this View it is possible to visualize the author that have committed the changes, the project and all refactorings realized.
+%KDM-RE also supplies a multiple versions of a system at level models (KDM) which allows the engineer to work interactively on multiple models and to explore alternate refactoring path. As can see in the region \textcircled{c} (see Figure~\ref{fig:interface}), the engineer must select a KDM file, then he must right-click on the mouse to appear a popup menu named ``Versions''. By releasing the mouse on this menu, three options is shown: (\textit{i}) List of changes, (\textit{ii}) Delete version and (\textit{iii}) Create a child version. The last option create a copy of the KDM file - then the engineer can explore another refactoring path. The second option delete a specific version - first option shows all changes that have been realized in a current KDM file, all changes are depicted in an Eclipse View, as shown in region \textcircled{d}. In this View it is possible to visualize the author that have committed the changes, the project and all refactorings realized.
 
 \subsection{Case Study}
 
@@ -151,9 +149,9 @@ university domain. In an university there are several Persons, more specifically
 \label{fig:wizard}
 \end{figure}
 
-After selecting the meta-class, a right-click opens the context menu where the refactoring is accessible. After the click, the system displays the ``RefactoringWizard'' to the engineer, Figure~\ref{fig:wizard}(b) depicts the Extract Class Wizard. In this wizard, the name of the new meta-class can be set. Also a preview of all detected \texttt{StorableUnits} and \texttt{MethodUnits} that can be chosen to put into the new meta-class. Further, the engineer can select if either the new meta-class will be a top level meta-class or a nested meta-class. The engineer also can select if the KDM-RE must create instances of \texttt{MethodUnits} to represent accessors methods (gets and sets). Finally, the engineer can set the name of the \texttt{StorableUnit} that represent the link between the two meta-classes (the old meta-class and the new one). After all of the required inputs have been made, the engineer can click on the button ``Finish'' and the refactoring ``Extract Class'' is performed by KDM-RE. As can be seen in Figure~\ref{fig:wizard}(c) a new instance of \texttt{ClassUnit} named ``Document'' was created - two \texttt{StorableUnit} from ``Pessoa'', i.e., ``rg'' and ``CPF'' were moved to the new \texttt{ClassUnit} - instances of \texttt{MethodUnits} were also created to represent the gets and sets. In addition, the instance of \texttt{ClassUnit} named ``Pessoa'' owns a new instance of \texttt{StorableUnit} that represent the link between both \texttt{ClassUnits}. Due space limitation the other \texttt{StorableUnits} of \texttt{ClassUnit} named ``Pessoa'' are not shown in Figure~\ref{fig:wizard}(c).
+After selecting the meta-class, a right-click opens the context menu where the refactoring is accessible. After the click, the system displays the ``RefactoringWizard'' to the engineer, Figure~\ref{fig:wizard}(b) depicts the Extract Class Wizard. In this wizard, the name of the new meta-class can be set. Also a preview of all detected \texttt{StorableUnits} and \texttt{MethodUnits} that can be chosen to put into the new meta-class. Further, the engineer can select if either the new meta-class will be a top level meta-class or a nested meta-class. The engineer also can select if the KDM-RE must create instances of \texttt{MethodUnits} to represent accessors methods (gets and sets). Finally, the engineer can set the name of the \texttt{StorableUnit} that represent the link between the two meta-classes (the old meta-class and the new one). After all of the required inputs have been made, the engineer can click on the button ``Finish'' and the refactoring ``Extract Class'' is performed by KDM-RE. 
 
-After the engineer realize the refactorings, an UML class diagram is created on the fly to mirror graphically all changes performed in the KDM model, see Figure~\ref{fig:interface}\textcircled{b} right side. Moreover, the KDM-RE creates/updates a tracking log to show the historic of all changes performed in the system, as can be see in Figure~\ref{fig:interface}\textcircled{d}.                     
+As can be seen in Figure~\ref{fig:wizard}(c) a new instance of \texttt{ClassUnit} named ``Document'' was created - two \texttt{StorableUnit} from ``Pessoa'', i.e., ``rg'' and ``CPF'' were moved to the new \texttt{ClassUnit} - instances of \texttt{MethodUnits} were also created to represent the gets and sets. In addition, the instance of \texttt{ClassUnit} named ``Pessoa'' owns a new instance of \texttt{StorableUnit} that represent the link between both \texttt{ClassUnits}. Due space limitation the other \texttt{StorableUnits} of \texttt{ClassUnit} named ``Pessoa'' are not shown in Figure~\ref{fig:wizard}(c). After the engineer realize the refactorings, an UML class diagram is created on the fly to mirror graphically all changes performed in the KDM model, see Figure~\ref{fig:interface}\textcircled{b} right side. %Moreover, the KDM-RE creates/updates a tracking log to show the historic of all changes performed in the system, as can be see in Figure~\ref{fig:interface}\textcircled{d}.                     
 
 %\section{Architecture\label{sec:architecture}}
  %\input{tex/architecture}
