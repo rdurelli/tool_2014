@@ -93,33 +93,33 @@ Available object-oriented refactoring catalogues are not reusable as they are, b
 
 \section{Refactoring for KDM by means of KDM-RE}\label{sec:refactoring_kdm_kdm_re}
 
-This sections describes a \textit{plug-in} on the top of the Eclipse Platform named \textbf{K}nowledge \textbf{D}iscovery \textbf{M}odel-\textbf{R}efactoring \textbf{E}nvironment (KDM-RE). 
+This sections describes KDM-RE. 
 In Figure~\ref{fig:interface} we depicted the main window of our \textit{plug-in}. 
-For explanation purpose, we have identified main regions, i.e., \textcircled{a}, and \textcircled{b}.
-It supports 17 refactorings adapted to KDM. These refactorings are based on some fine-grained refactorings proposed by Fowler~\cite{refactImpro}. All the adapted refactorings are shown in Table~\ref{tab:adaptedRefactoring}. We chose the Fowler's refactorings once them are well known, basic and fine-grained refactorings. Please, not that KDM-RE uses MoDisco\footnote{\url{http://www.eclipse.org/MoDisco/}} once it provides an extensible framework to transform an specific source-code to KDM models.
-
-
+For explanation purpose, we highlight two main regions, i.e., \textcircled{a}, and \textcircled{b}.
+It supports 17 refactorings adapted to KDM. These refactorings are based on some fine-grained refactorings proposed by Fowler~\cite{refactImpro}. All the refactorings are shown in Table~\ref{tab:adaptedRefactoring}. We chose the Fowler's refactorings because they are well known, basic and fine-grained refactorings. Please, not that KDM-RE uses MoDisco\footnote{\url{http://www.eclipse.org/MoDisco/}} once it provides an extensible framework to transform an specific source-code to KDM models.
+%
+%
 %TabelaPAraUsarNoVEM
 \begin{table}[!h]
 \caption{Refactorings Adapted to KDM}
 \label{tab:adaptedRefactoring}
 \centering
   % Requires \usepackage{graphicx}
-  \includegraphics[scale=0.67]{Figure/catalogue2}
+  \includegraphics[scale=0.67]{Figure/NovoCatalogue}
 \end{table}
-
+%
 \begin{figure}[!ht]
 \centering
   % Requires \usepackage{graphicx}
   \includegraphics[width=14cm, height=6.8cm]{figure/ScreenShot_with_UML2}
-\caption{KDM-RE's Interface}
+\caption{Snippets KDM-RE's Interface}
 \label{fig:interface}
 \end{figure}
- 
+ %
 %Thus, suppose that a KDM model has already been instantiated. 
 %All the steps to how obtain a KDM instance are explained further. 
 %In order to assist the refactorings we extended the KDM's model browser provided by MoDisco. 
-
+%
 In Figure~\ref{fig:interface} is presented just a snippet of KDM-RE. Starting from the popup menu named ``Refactoring KDM'', in this model browser, see Figure~\ref{fig:interface}\textcircled{a}, either the software developer or software modernizer can interact with the KDM model and choose which refactoring must be carried out in the KDM.
 %
 %We added a popup menu named ``Refactoring KDM'' in this model browser, see Figure~\ref{fig:interface}\textcircled{a}.
@@ -129,17 +129,17 @@ For illustration purposes only we drew rectangles to separate the refactorings i
 The black rectangle represents refactorings that deal with generalization, the blue rectangle stand for refactorings to organize data and the red one symbolize refactoring to assist the moving features between objects.
 
 
-The region \textcircled{b} on Figure~\ref{fig:interface} shows an UML class diagram that can be used before to apply some refactorings in order to assist the engineer to decide where to apply the refactorings. This UML class diagram also can be useful as the engineer performs the refactorings in KDM model, i.e., changes are reproduced on the fly in a class diagram.
-We claim that the latter use of this UML class diagram is important once it provides an abstract view of the system, hence, the engineer/modernizer can visually check the system's changes after applying a set of refactorings. 
-In addition, in the context of modernization of a legacy system usually the source-code is the only available artifact of that legacy system. 
+The region \textcircled{b} on Figure~\ref{fig:interface} shows an UML class diagram. This diagram can be used before to apply some refactorings to assist the modernizer to decide where/when to apply the refactorings. This UML class diagram also can be useful as the modernizer performs the refactorings in KDM model. For instance, changes are reproduced on the fly in a class diagram.
+We claim that the latter use of this diagram is important once it provides an abstract view of the system, hence, the modernizer can visually check the system's changes after applying a set of refactorings. 
+Furthermore, in the context of modernization usually the source-code is the only available artifact of a legacy system. 
 Therefore, creating an UML class diagram makes, both the legacy system and the generated software to have a new type of artifact (i.e., UML class models), improving their documentation.
 
 %KDM-RE also supplies a multiple versions of a system at level models (KDM) which allows the engineer to work interactively on multiple models and to explore alternate refactoring path. As can see in the region \textcircled{c} (see Figure~\ref{fig:interface}), the engineer must select a KDM file, then he must right-click on the mouse to appear a popup menu named ``Versions''. By releasing the mouse on this menu, three options is shown: (\textit{i}) List of changes, (\textit{ii}) Delete version and (\textit{iii}) Create a child version. The last option create a copy of the KDM file - then the engineer can explore another refactoring path. The second option delete a specific version - first option shows all changes that have been realized in a current KDM file, all changes are depicted in an Eclipse View, as shown in region \textcircled{d}. In this View it is possible to visualize the author that have committed the changes, the project and all refactorings realized.
 
 \subsection{Case Study}
 
-In this section, we motivate KDM-RE by analyzing an example. This example is a small part of the university domain.  Figure~\ref{fig:interface}~\textcircled{b} (left side) shows a class diagram used for modeling a small part of the
-university domain. In an university there are several Persons, more specifically Professors, their Assistants, and Students. Each Person has RG, CPF, and address (of type String). Moreover, classes Professor, Assistant, and Student have an attribute name of type String each. Pretend that either the software modernizer or the software developer found out by looking at the UML class diagram (see Figure~\ref{fig:interface}\textcircled{b} left side) this redundantly, i.e., equal attributes in sibling classes. Therefore, he/she must apply the refactoring ``Pull Up Field'. Similarly, he/she also found out by looking at the UML class diagram that one class is doing work that should be done by two or more. For example, he/she found that the attributes RG and CPF should be modularized to a class. Similarly, it is necessary to provide more information about they address, such as number, city, country, etc. Therefore, he/she must apply the refactoring ``Extract Class'' to the attributes ``RG'', ``CPF'' and ``rua''. Due space limitation it is depicted just the extraction of the attributes ``RG'' and ``CPF''.  The first step is to select the meta-class that he/she identified as a bad smell, i.e., the meta-class to be extracted into a separate one.  This step is illustrated in Figure~\ref{fig:wizard}(a). 
+In this section, we motivate KDM-RE by analyzing  one hypothetical case study. This case study is a small part of the university domain. Figure~\ref{fig:interface}~\textcircled{b} (left side) shows a class diagram used for modeling a small part of the
+university domain. In an university there are several Persons, more specifically Professors, their Assistants, and Students. Each Person has RG, CPF, and address (of type String). Moreover, classes Professor, Assistant, and Student have an attribute name of type String each. The software modernizer or the software developer found out by looking at the UML class diagram (see Figure~\ref{fig:interface}\textcircled{b} left side) this redundantly, i.e., equal attributes in sibling classes. Therefore, he/she must apply the refactoring ``Pull Up Field'. Similarly, he/she also found out by looking at the UML class diagram that one class is doing work that should be done by two or more. For example, he/she found that the attributes RG and CPF should be modularized to a class. Similarly, it is necessary to provide more information about they address, such as number, city, country, etc. Therefore, he/she must apply the refactoring ``Extract Class'' to the attributes ``RG'', ``CPF'' and ``rua''. Due space limitation it is depicted just the extraction of the attributes ``RG'' and ``CPF''.  The first step is to select the meta-class that he/she identified as a bad smell, i.e., the meta-class to be extracted into a separate one.  This step is illustrated in Figure~\ref{fig:wizard}(a). 
 
 \begin{figure}[!ht]
 \centering
@@ -156,7 +156,7 @@ As can be seen in Figure~\ref{fig:wizard}(c) a new instance of \texttt{ClassUnit
 %\section{Architecture\label{sec:architecture}}
  %\input{tex/architecture}
 
-\section{Related Work\label{sec:related}}
+\section{Related Work and Main Findings\label{sec:related}}
  \input{tex/related_work}
 
 \section{Concluding Remarks\label{sec:conclusion}}
