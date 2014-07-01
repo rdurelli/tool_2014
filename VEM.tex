@@ -35,7 +35,7 @@
   S\~{a}o Carlos, SP, Brazil.
 %\nextinstitute
  % RMoD Team, INRIA, Lille, France
-  \email{\{rdurelli, delamaro\}@icmc.usp.br\inst{1}, valter@dc.ufscar.br\inst{2}}
+  \email{\{rdurelli, delamaro\}@icmc.usp.br\inst{1}}, \email{\{valter, bruno.santos, raphael.honda\}@dc.ufscar.br\inst{2}}
 }
 
 \begin{document} 
@@ -51,18 +51,17 @@
 %\section{Motivation\label{sec:motivation}} 
 % \input{tex/motivation}
 
-\section{Background\label{sec:KDM-RE}} 
+\section{ADM and KDM\label{sec:KDM-RE}} 
 
-This section introduces the basic concepts of Architecture-Driven Modernization, Knowledge-Discovery Meta-model, and refactorings. 
+%This section introduces the basic concepts of Architecture-Driven Modernization, Knowledge-Discovery Meta-model, and refactorings. 
 
-\subsection{ADM and KDM}
+%\subsection{ADM and KDM}
 
 OMG defined ADM initiative~\cite{1686216} which advocates carrying out the reengineering process considering MDA principles. In other words, ADM is the concept of modernizing existing systems with a focus on all aspects of the current systems architecture and the ability to transform current architectures to target architectures by using all principles of MDA~\cite{Ulrich:2010:IST:1841736}.
 
 To perform a system modernization, ADM introduces Knowledge Discovery meta-model (KDM). KDM is an OMG specification adopted as ISO/IEC 19506 by the International Standards Organization for representing information related to existing software systems. According to P\'{e}rez-Castillo et al.,~\cite{1686216} the goal of the KDM standard is to define a meta-model to represent all the different legacy software artifacts involved in a legacy information system (e.g. source code, user interfaces, databases, etc.). The KDM provides a comprehensive high-level view of the behavior, structure and data of legacy information systems by means of a set of meta-models. The main purpose of the KDM specification is not the representation of models related strictly to the source code nature such as Unified Modeling Language (UML). While UML can be used to mainly to visualize the system ``as-is'', an ADM-based process using KDM starts from the different legacy software artifacts and builds higher-abstraction level models in a bottom-up manner through reverse engineering techniques.
 
-As outlined before, the KDM consists of four abstraction layers: (\textit{i}) \emph{Infrastructure Layer}, (\textit{ii}) \emph{Program Elements Layer}, (\textit{iii}) \emph{Runtime Resource Layer}, and (\textit{iv}) \emph{Abstractions Layer}. Each layer is further organized into packages, as can be seen in Figure~\ref{fig:layersKDM}. Each package defines a set of meta-model elements whose purpose is to represent a certain independent facet of knowledge related to existing software systems.  We are specially interested in the \textit{Program Elements Layer} because it defines the Code and Action packages which are widely used by our catalogue. The Code package defines a set meta-classes that represents the common elements in the source code supported by different programming languages. In Table~\ref{tab:mappingCodeToKDM} is depicted some of them. This table identifies KDM meta-classes possessing similar characteristics to the static structure of the source code. Some meta-classes can be direct mapped, such as Class from object-oriented language, which can be easily mapped to the \texttt{ClassUnit} meta-class from KDM.
-
+As outlined before, the KDM consists of four abstraction layers: (\textit{i}) \emph{Infrastructure Layer}, (\textit{ii}) \emph{Program Elements Layer}, (\textit{iii}) \emph{Runtime Resource Layer}, and (\textit{iv}) \emph{Abstractions Layer}. Each layer is further organized into packages, as can be seen in Figure~\ref{fig:layersKDM}. 
 \begin{figure}[t]
 \centering
   % Requires \usepackage{graphicx}
@@ -70,6 +69,10 @@ As outlined before, the KDM consists of four abstraction layers: (\textit{i}) \e
 \caption{Layers, packages, and separation of concerns in KDM (Adapted from~\cite{OMGADM})}
 \label{fig:layersKDM}
 \end{figure}
+
+Each package defines a set of meta-model elements whose purpose is to represent a certain independent facet of knowledge related to existing software systems.  We are specially interested in the \textit{Program Elements Layer} because it defines the Code and Action packages which are widely used by our catalogue. The Code package defines a set meta-classes that represents the common elements in the source code supported by different programming languages. In Table~\ref{tab:mappingCodeToKDM} is depicted some of them. This table identifies KDM meta-classes possessing similar characteristics to the static structure of the source code. Some meta-classes can be direct mapped, such as Class from object-oriented language, which can be easily mapped to the \texttt{ClassUnit} meta-class from KDM.
+
+
 
 
 %TabelaPAraUsarNoVEM
@@ -81,11 +84,10 @@ As outlined before, the KDM consists of four abstraction layers: (\textit{i}) \e
   \includegraphics[scale=1]{Figure/TabelaPAraUsarNoVEM}
 \end{table}
 
-\subsection{Refactoring and Model-Driven Refactoring}
+%\subsection{Refactoring and Model-Driven Refactoring}
+%Nowadays, there are researches been carried out about apply refactoring in model instead of source code\cite{Ulrich:2010:IST:1841736}. Unfortunately, no catalogue of refactorings for the KDM specification exists. Nevertheless, although ADM provides the process for refactoring legacy systems by means of KDM, there is a lack of an Integrated Development Environment (IDE) to lead engineers to apply refactorings as such exist in others object-oriented languages. In the same direction, Model-Driven Refactoring is a special kind of model transformation that allows us to improve the structure of the model while preserving its internal quality characteristics. Model-driven refactoring is a considerably new area of research which still needs to reach the level of maturity attained by source code refactoring~\cite{ModelDrivenRefactoring}. 
 
-In the area of object-oriented programming, refactorings are the technique of choice for improving the structure of existing code without changing its external behavior~\cite{refactImpro}. They have proved to be useful to improve the quality attributes of source code, and thus, to increase its maintainability. Nowadays, there are researches been carried out about apply refactoring in model instead of source code\cite{Ulrich:2010:IST:1841736}. Unfortunately, no catalogue of refactorings for the KDM specification exists. Nevertheless, although ADM provides the process for refactoring legacy systems by means of KDM, there is a lack of an Integrated Development Environment (IDE) to lead engineers to apply refactorings as such exist in others object-oriented languages. In the same direction, Model-Driven Refactoring is a special kind of model transformation that allows us to improve the structure of the model while preserving its internal quality characteristics. Model-driven refactoring is a considerably new area of research which still needs to reach the level of maturity attained by source code refactoring~\cite{ModelDrivenRefactoring}. 
-
-Available object-oriented refactoring catalogues are not reusable as they are, because the KDM follow the MDA. This forces developers to create they own refactorings to be applied into models, i.e., they neither follow any catalogue nor use any kind of dedicated support. As a result, and due to the potential  complexity of model-driven refactoring, manual modifications into the models may lead to unwantedside-effects and result in a tedious and error-prone maintenance process. In this sense, the main contribution of this paper is the provision of an IDE to lead engineers to apply refactorings in KDM, which are based on well known refactorings\cite{refactImpro}. The IDE as well as the adapted catalogue are based on our experience as model-driven engineering. %Also, the catalogue herein provided is heavily inspired by the refactorings given by Fowler~\cite{refactImpro}.
+%Available object-oriented refactoring catalogues are not reusable as they are, because the KDM follow the MDA. This forces developers to create they own refactorings to be applied into models, i.e., they neither follow any catalogue nor use any kind of dedicated support. As a result, and due to the potential  complexity of model-driven refactoring, manual modifications into the models may lead to unwanted side-effects and result in a tedious and error-prone maintenance process.  %Also, the catalogue herein provided is heavily inspired by the refactorings given by Fowler~\cite{refactImpro}.
 
 
 
@@ -96,8 +98,7 @@ Available object-oriented refactoring catalogues are not reusable as they are, b
 This sections describes KDM-RE. 
 In Figure~\ref{fig:interface} we depicted the main window of our \textit{plug-in}. 
 For explanation purpose, we highlight two main regions, i.e., \textcircled{a}, and \textcircled{b}.
-It supports 17 refactorings adapted to KDM. These refactorings are based on some fine-grained refactorings proposed by Fowler~\cite{refactImpro}. All the refactorings are shown in Table~\ref{tab:adaptedRefactoring}. We chose the Fowler's refactorings because they are well known, basic and fine-grained refactorings. Please, not that KDM-RE uses MoDisco\footnote{\url{http://www.eclipse.org/MoDisco/}} once it provides an extensible framework to transform an specific source-code to KDM models.
-%
+It supports 17 refactorings adapted to KDM. These refactorings are based on some fine-grained refactorings proposed by Fowler~\cite{refactImpro}. All the refactorings are shown in Table~\ref{tab:adaptedRefactoring}. We chose the Fowler's refactorings because they are well known, basic and fine-grained refactorings. Please, not that KDM-RE uses MoDisco\footnote{\url{http://www.eclipse.org/MoDisco/}} once it provides an extensible framework to transform an specific source-code to KDM models.%
 %
 %TabelaPAraUsarNoVEM
 \begin{table}[!h]
@@ -144,7 +145,7 @@ university domain. In an university there are several Persons, more specifically
 \begin{figure}[!ht]
 \centering
   % Requires \usepackage{graphicx}
-  \includegraphics[scale=0.6]{figure/Wizard2}
+  \includegraphics[scale=0.53]{figure/Wizard2}
 \caption{Extract Class Wizard}
 \label{fig:wizard}
 \end{figure}
